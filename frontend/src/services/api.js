@@ -1,4 +1,4 @@
-const BASE = 'https://resource-exchange-platform.onrender.com/api';
+const BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 
 async function request(path, options = {}) {
   const token = localStorage.getItem('rep_token');
