@@ -1,5 +1,6 @@
 package com.resourceexchange.exception;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
@@ -31,13 +32,16 @@ public class GlobalExceptionHandler {
                 .body(Map.of("message", message));
     }
 
-    @ExceptionHandler(Exception.class)
-    ResponseEntity<?> other(Exception e) {
+   @ExceptionHandler(Exception.class)
+public ResponseEntity<?> handleException(Exception ex) {
 
-        e.printStackTrace();
+    ex.printStackTrace();
 
-        return ResponseEntity
-                .internalServerError()
-                .body(Map.of("message", "Unexpected server error."));
-    }
+    return ResponseEntity
+            .status(HttpStatus.INTERNAL_SERVER_ERROR)
+            .body(Map.of(
+                    "message", "Unexpected server error.",
+                    "error", ex.getMessage()
+            ));
+}
 }
