@@ -1,5 +1,12 @@
 # Resource Exchange Platform
 
+## 🚀 Live Demo
+
+**Frontend:** https://resource-exchange-platform.vercel.app
+
+**Backend API:** https://resource-exchange-platform.onrender.com
+
+
 A full-stack Software Engineering micro-project for sharing and exchanging resources. The implementation follows the project's Use Case, Class, ER, DFD, Activity, Sequence, Collaboration, State Chart, Component and Deployment models.
 
 ## Technology
@@ -183,10 +190,5 @@ Never commit real passwords, JWT secrets or `.env` files. Only commit `.env.exam
 - State Chart -> ExchangeRequest status lifecycle
 - Component -> frontend, backend services and database
 - Deployment -> client, web/app server and MySQL deployment
-# Resource Exchange Platform
 
-## 🚀 Live Demo
 
-**Frontend:** https://resource-exchange-platform.vercel.app
-
-**Backend API:** https://resource-exchange-platform.onrender.com
