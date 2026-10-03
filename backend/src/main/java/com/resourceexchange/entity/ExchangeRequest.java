@@ -11,12 +11,13 @@ public class ExchangeRequest {
     @Column(nullable = false) private LocalDateTime requestDate = LocalDateTime.now();
     @Enumerated(EnumType.STRING) @Column(nullable = false)
     private RequestStatus status = RequestStatus.PENDING;
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "requester_id", nullable = false)
-    private User requester;
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "resource_id", nullable = false)
-    private Resource resource;
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+@JoinColumn(name = "requester_id", nullable = false)
+private User requester;
+
+@ManyToOne(fetch = FetchType.EAGER, optional = false)
+@JoinColumn(name = "resource_id", nullable = false)
+private Resource resource;
 
     public Long getRequestId() { return requestId; }
     public LocalDateTime getRequestDate() { return requestDate; }
