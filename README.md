@@ -1,10 +1,12 @@
 # Resource Exchange Platform
 
-## 🚀 Live Demo
+## 🚀 Deployment
 
-**Frontend:** https://resource-exchange-platform.vercel.app
+🌐 **Frontend:** https://resource-exchange-platform.vercel.app
 
-**Backend API:** https://resource-exchange-platform.onrender.com
+⚙️ **Backend API:** https://resource-exchange-platform.onrender.com
+
+❤️ **Backend Health Check:** https://resource-exchange-platform.onrender.com/api/health
 
 
 A full-stack Software Engineering micro-project for sharing and exchanging resources. The implementation follows the project's Use Case, Class, ER, DFD, Activity, Sequence, Collaboration, State Chart, Component and Deployment models.
