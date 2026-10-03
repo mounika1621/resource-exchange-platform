@@ -183,3 +183,10 @@ Never commit real passwords, JWT secrets or `.env` files. Only commit `.env.exam
 - State Chart -> ExchangeRequest status lifecycle
 - Component -> frontend, backend services and database
 - Deployment -> client, web/app server and MySQL deployment
+# Resource Exchange Platform
+
+## 🚀 Live Demo
+
+**Frontend:** https://resource-exchange-platform.vercel.app
+
+**Backend API:** https://resource-exchange-platform.onrender.com
